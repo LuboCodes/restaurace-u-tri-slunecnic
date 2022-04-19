@@ -1,0 +1,158 @@
+/*/ Prefix /*/
+/*************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    overflow-x: hidden; 
+}
+/*************************************************/
+
+/*/ Fonts /*/
+/*************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Work+Sans:wght@500&display=swap');
+$font: "Kalam", cursive;
+$font2: "Work Sans", sans-serif;
+/*************************************************/
+
+// Animation classes
+/*************************************************/
+.animated {
+    opacity: 0;
+}
+
+.animation {
+    animation: 1.5s fade-up ease-in-out forwards;
+}
+/*************************************************/
+
+
+/*/ Keyframes /*/
+/*************************************************/
+
+// Ham
+/***************************************/
+
+// On show offcanvas
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+// On hide offcanvas
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// On show offcanvas
+@keyframes topCross {
+    0% {
+    
+    }
+
+    100% {
+        transform: translateY(0.7rem) rotateZ(40deg);
+      
+    }
+}
+
+// On hide offcanvas
+@keyframes topCrossShow {
+    0% {
+        transform: translateY(0.7rem) rotateZ(40deg);
+    }
+
+    100% {
+        transform: translateY(0) rotateZ(0deg);
+    }
+}
+
+// On show offcanvas
+@keyframes bottomCross {
+    0% {
+        
+    }
+
+    100% {
+        transform: translateY(-0.75rem) rotateZ(-40deg);
+      
+    }
+}
+
+// On hide offcanvas
+@keyframes bottomCrossShow {
+    0% {
+        transform: translateY(-0.75rem) rotateZ(-40deg);
+    }
+
+    100% {
+        transform: translateY(0) rotateZ(0deg);
+    }
+}
+/***************************************/
+
+
+// Up and Down
+/***************************************/
+@keyframes upAndDown {
+    0% {
+        transform: translateY(0) translateX(-50%);
+    }
+
+    50% {
+        transform: translateY(-0.75rem) translateX(-50%);
+    }
+
+    100% {
+        transform: translateY(0) translateX(-50%);
+    }
+}
+
+@keyframes upAndDown2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-0.75rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+/***************************************/
+
+// Fade up
+/***************************************/
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(25%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/***************************************/
+/*************************************************/
