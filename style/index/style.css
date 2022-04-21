@@ -523,7 +523,8 @@ a[href^=tel] {
 }
 .menu .menu-content {
   width: 80%;
-  height: 75vh;
+  border: 0.15rem solid #A78F6C;
+  border-radius: 10px;
 }
 
 /******************************************************************/
@@ -698,6 +699,10 @@ footer .footer-address div img {
     height: 20vh;
   }
 
+  .menu .menu-content {
+    padding-top: 150%;
+  }
+
   .contacts table tr td div span {
     font-size: 1.4em;
   }
@@ -799,7 +804,8 @@ footer .footer-address div img {
     font-size: 3em;
   }
   .menu .menu-content {
-    height: 240vh;
+    width: 100%;
+    padding-top: 450%;
   }
 
   .timetable h2 {
